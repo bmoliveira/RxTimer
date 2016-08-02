@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-RxTimer adds RxSwift NSTimer bindings.
+RxTimer adds RxSwift NSTimer bindings. This allows you to trigger events reactively with a timer.
                        DESC
 
   s.homepage         = 'https://github.com/ivanbruel/RxTimer'
