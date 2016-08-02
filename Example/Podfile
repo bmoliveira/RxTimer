@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RxTimer_Tests' do
+  pod 'RxTimer', :path => '../'
+  
+  
+end

@@ -1,0 +1,22 @@
+{
+  "name": "RxTimer",
+  "version": "0.1.0",
+  "summary": "A short description of RxTimer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RxTimer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ivan Bruel": "ivan.bruel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RxTimer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxTimer/Classes/**/*"
+}

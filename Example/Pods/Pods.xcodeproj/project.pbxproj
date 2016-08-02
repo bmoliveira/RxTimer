@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E2A60E5B2BA6B829FC51B65ABDE75D3 /* RxTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BC71701A89AE55121FAF327DBC3270 /* RxTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45778CD6D710D3A82647E911D2569216 /* RxTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C1541E252F1E7E885F826CCB614A54 /* RxTimer-dummy.m */; };
+		5642D2D57C447E6E879B98FCF3D96901 /* Pods-RxTimer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA1D4E62713539CFE0E930BFB4BA787 /* Pods-RxTimer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8D1AB745F3529B3BAF3AF1B608FCBA /* Pods-RxTimer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79380CD43CAFE777DB59C5ECA784988C /* Pods-RxTimer_Tests-dummy.m */; };
+		62398F46508A51162E247BE58D4E69CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6D0748A2563498C8495D774511046353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FE8611728D236D87D3A6415F3A930F41 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C30B216D4A80019DEE201D845829E /* ReplaceMe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97274F9A224F6DF59C5DB55D201C74EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76CA29C188F94A746C6579636C3F22F;
+			remoteInfo = RxTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3516486059061F8095A1B57029B3ED /* Pods-RxTimer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RxTimer_Tests-resources.sh"; sourceTree = "<group>"; };
+		28F535641C12C1DD3F90164CA0FD9641 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C1541E252F1E7E885F826CCB614A54 /* RxTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxTimer-dummy.m"; sourceTree = "<group>"; };
+		72E7982358EB9AEC183C37193744304E /* Pods_RxTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		760C30B216D4A80019DEE201D845829E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		774BF37D326A1A570C2F041405D45092 /* Pods-RxTimer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RxTimer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		79380CD43CAFE777DB59C5ECA784988C /* Pods-RxTimer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RxTimer_Tests-dummy.m"; sourceTree = "<group>"; };
+		7D081F806A96BA67543490DFCEE96815 /* RxTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxTimer-prefix.pch"; sourceTree = "<group>"; };
+		92C6B80657C1036F9344EFF09DDF89C8 /* Pods-RxTimer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RxTimer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9860AB0C11662854245B799E09D4437A /* RxTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxTimer.xcconfig; sourceTree = "<group>"; };
+		A181931C502CAE27CBCC58864DDCC8DA /* Pods-RxTimer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxTimer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6EC4CD40246A6F946C022CBD0A1B2D /* RxTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8C0A0EBD43692BDC138D11AC2EC59E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE85C7AE410D5B7330FDE2B5ADA3778 /* Pods-RxTimer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxTimer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C3BC71701A89AE55121FAF327DBC3270 /* RxTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxTimer-umbrella.h"; sourceTree = "<group>"; };
+		C9B2ECEBDB578D6970757756C94705B4 /* RxTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RxTimer.modulemap; sourceTree = "<group>"; };
+		CAA1D4E62713539CFE0E930BFB4BA787 /* Pods-RxTimer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RxTimer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB7CC28DD366EC7B6546E4B6B114633C /* Pods-RxTimer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RxTimer_Tests.modulemap"; sourceTree = "<group>"; };
+		E751B207EA6D8F77F61F20C2EA1D1321 /* Pods-RxTimer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RxTimer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1463825EC86A1FCC842F4A56DD738FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0748A2563498C8495D774511046353 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819C7A34283AD76ECD52402B59045D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62398F46508A51162E247BE58D4E69CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		42B263EB6BF6F118B11BD4682E6589A5 /* RxTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D900F66947A6C5822AA663A57539668E /* RxTimer */,
+				B9A5A37AF25106AE0B70B2EC8A4DC898 /* Support Files */,
+			);
+			name = RxTimer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		511BA25B5BC16BB1DD41AFB709DDE8FC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8032033D6277E4010248BEDA2CD63999 /* Pods-RxTimer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FE9A1340A69595DBDC198F5E16ADA3F4 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				ED1463D425BA016F40CFEF618A8C13FE /* Products */,
+				511BA25B5BC16BB1DD41AFB709DDE8FC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8032033D6277E4010248BEDA2CD63999 /* Pods-RxTimer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA8C0A0EBD43692BDC138D11AC2EC59E /* Info.plist */,
+				DB7CC28DD366EC7B6546E4B6B114633C /* Pods-RxTimer_Tests.modulemap */,
+				774BF37D326A1A570C2F041405D45092 /* Pods-RxTimer_Tests-acknowledgements.markdown */,
+				92C6B80657C1036F9344EFF09DDF89C8 /* Pods-RxTimer_Tests-acknowledgements.plist */,
+				79380CD43CAFE777DB59C5ECA784988C /* Pods-RxTimer_Tests-dummy.m */,
+				E751B207EA6D8F77F61F20C2EA1D1321 /* Pods-RxTimer_Tests-frameworks.sh */,
+				0F3516486059061F8095A1B57029B3ED /* Pods-RxTimer_Tests-resources.sh */,
+				CAA1D4E62713539CFE0E930BFB4BA787 /* Pods-RxTimer_Tests-umbrella.h */,
+				A181931C502CAE27CBCC58864DDCC8DA /* Pods-RxTimer_Tests.debug.xcconfig */,
+				BDE85C7AE410D5B7330FDE2B5ADA3778 /* Pods-RxTimer_Tests.release.xcconfig */,
+			);
+			name = "Pods-RxTimer_Tests";
+			path = "Target Support Files/Pods-RxTimer_Tests";
+			sourceTree = "<group>";
+		};
+		B5CB7DD4DD87AC9938B686323BEC8C78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				760C30B216D4A80019DEE201D845829E /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B9A5A37AF25106AE0B70B2EC8A4DC898 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28F535641C12C1DD3F90164CA0FD9641 /* Info.plist */,
+				C9B2ECEBDB578D6970757756C94705B4 /* RxTimer.modulemap */,
+				9860AB0C11662854245B799E09D4437A /* RxTimer.xcconfig */,
+				35C1541E252F1E7E885F826CCB614A54 /* RxTimer-dummy.m */,
+				7D081F806A96BA67543490DFCEE96815 /* RxTimer-prefix.pch */,
+				C3BC71701A89AE55121FAF327DBC3270 /* RxTimer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RxTimer";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D900F66947A6C5822AA663A57539668E /* RxTimer */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB7DD4DD87AC9938B686323BEC8C78 /* Classes */,
+			);
+			path = RxTimer;
+			sourceTree = "<group>";
+		};
+		ED1463D425BA016F40CFEF618A8C13FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72E7982358EB9AEC183C37193744304E /* Pods_RxTimer_Tests.framework */,
+				AA6EC4CD40246A6F946C022CBD0A1B2D /* RxTimer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE9A1340A69595DBDC198F5E16ADA3F4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42B263EB6BF6F118B11BD4682E6589A5 /* RxTimer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63CE49F3D8B40111F851BA6F8EF504D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2A60E5B2BA6B829FC51B65ABDE75D3 /* RxTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CFCE198DC77B63F82554CC16BB6E4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5642D2D57C447E6E879B98FCF3D96901 /* Pods-RxTimer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		012D17681194B56C443C3A1F1988C322 /* Pods-RxTimer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85A7F28AFE0434F88F87F79C63FB30B /* Build configuration list for PBXNativeTarget "Pods-RxTimer_Tests" */;
+			buildPhases = (
+				A2FAAB64168115157071AD805698EE2C /* Sources */,
+				5819C7A34283AD76ECD52402B59045D4 /* Frameworks */,
+				E2CFCE198DC77B63F82554CC16BB6E4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032B890213B1D05E5E7C78798C30D638 /* PBXTargetDependency */,
+			);
+			name = "Pods-RxTimer_Tests";
+			productName = "Pods-RxTimer_Tests";
+			productReference = 72E7982358EB9AEC183C37193744304E /* Pods_RxTimer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B76CA29C188F94A746C6579636C3F22F /* RxTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D019732C9A5588AB82B0EC5074E61A /* Build configuration list for PBXNativeTarget "RxTimer" */;
+			buildPhases = (
+				C3B330860AE788694087CEA6E02D342C /* Sources */,
+				1463825EC86A1FCC842F4A56DD738FDE /* Frameworks */,
+				63CE49F3D8B40111F851BA6F8EF504D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxTimer;
+			productName = RxTimer;
+			productReference = AA6EC4CD40246A6F946C022CBD0A1B2D /* RxTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ED1463D425BA016F40CFEF618A8C13FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012D17681194B56C443C3A1F1988C322 /* Pods-RxTimer_Tests */,
+				B76CA29C188F94A746C6579636C3F22F /* RxTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2FAAB64168115157071AD805698EE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D1AB745F3529B3BAF3AF1B608FCBA /* Pods-RxTimer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B330860AE788694087CEA6E02D342C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8611728D236D87D3A6415F3A930F41 /* ReplaceMe.swift in Sources */,
+				45778CD6D710D3A82647E911D2569216 /* RxTimer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032B890213B1D05E5E7C78798C30D638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxTimer;
+			target = B76CA29C188F94A746C6579636C3F22F /* RxTimer */;
+			targetProxy = 97274F9A224F6DF59C5DB55D201C74EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D00CBC879C0E109F0993DDF049DC5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A181931C502CAE27CBCC58864DDCC8DA /* Pods-RxTimer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RxTimer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RxTimer_Tests/Pods-RxTimer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RxTimer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61383E8A211022FE6871C8243FF42A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9860AB0C11662854245B799E09D4437A /* RxTimer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RxTimer/RxTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxTimer/RxTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RxTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90293145EB8D3CE5F0731D0BD0BD7242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE85C7AE410D5B7330FDE2B5ADA3778 /* Pods-RxTimer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RxTimer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RxTimer_Tests/Pods-RxTimer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RxTimer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E02449595EAA65549CB2B88C1E556BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9860AB0C11662854245B799E09D4437A /* RxTimer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RxTimer/RxTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxTimer/RxTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RxTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D019732C9A5588AB82B0EC5074E61A /* Build configuration list for PBXNativeTarget "RxTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61383E8A211022FE6871C8243FF42A4B /* Debug */,
+				E02449595EAA65549CB2B88C1E556BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85A7F28AFE0434F88F87F79C63FB30B /* Build configuration list for PBXNativeTarget "Pods-RxTimer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D00CBC879C0E109F0993DDF049DC5BF /* Debug */,
+				90293145EB8D3CE5F0731D0BD0BD7242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

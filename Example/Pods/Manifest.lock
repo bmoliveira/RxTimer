@@ -1,0 +1,16 @@
+PODS:
+  - RxTimer (0.1.0)
+
+DEPENDENCIES:
+  - RxTimer (from `../`)
+
+EXTERNAL SOURCES:
+  RxTimer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxTimer: ac5023aaf19e7c805016f7eb3a433b6171c794c4
+
+PODFILE CHECKSUM: 5f80bc3443e7bd46dc1bca3968f2d43d3d019139
+
+COCOAPODS: 1.0.1
