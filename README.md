@@ -5,6 +5,16 @@ RxTimer
 
 ## Usage
 
+## 1 second default timer
+```swift
+NSTimer.rx_timer
+  .subscribeNext { _ in
+    print("timer triggered")
+  }
+  .addDisposableTo(disposeBag)
+```
+
+## Any number of seconds
 ```swift
 NSTimer.rx_timer(10)
   .subscribeNext { _ in
