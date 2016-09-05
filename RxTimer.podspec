@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxTimer'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'RxTimer adds RxSwift NSTimer bindings.'
 
 # This description is used to generate tags and improve search results.
@@ -32,5 +32,5 @@ RxTimer adds RxSwift NSTimer bindings. This allows you to trigger events reactiv
 
   s.source_files = 'RxTimer/Classes/**/*'
 
-  s.dependency 'RxSwift', '~> 2.6'
+  s.dependency 'RxSwift', '~> 3.0.0.alpha.1'
 end
