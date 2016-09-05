@@ -8,16 +8,16 @@
 import Foundation
 import RxSwift
 
-public extension NSTimer {
+public extension Timer {
 
   class var rx_timer: Observable<Void> {
     return rx_timer(1.0)
   }
 
-  class func rx_timer(time: NSTimeInterval) -> Observable<Void> {
+  class func rx_timer(_ time: TimeInterval) -> Observable<Void> {
     return Observable<Void>.create { observer in
       observer.onNext()
-      let timer = NSTimer.schedule(repeatInterval: time) { timer in
+      let timer = Timer.schedule(repeatInterval: time) { timer in
         observer.onNext()
       }
       return AnonymousDisposable {
@@ -28,7 +28,7 @@ public extension NSTimer {
   }
 }
 
-private extension NSTimer {
+private extension Timer {
   /*
    Creates and schedules a one-time `NSTimer` instance.
 
@@ -37,13 +37,16 @@ private extension NSTimer {
    - handler: A closure to execute after `delay`.
    - Returns: The newly-created `NSTimer` instance.
    */
-  private class func schedule(delay delay: NSTimeInterval, handler: NSTimer! -> Void) -> NSTimer {
+  class func schedule(delay: TimeInterval, handler: @escaping ()->()) -> Timer {
     let fireDate = delay + CFAbsoluteTimeGetCurrent()
-    let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0, handler)
-    CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, kCFRunLoopCommonModes)
-    return timer
+    let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0) { theTimer in
+      handler()
+    }
+    
+    CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, CFRunLoopMode.commonModes)
+    return timer!
   }
-
+  
   /*
    Creates and schedules a repeating `NSTimer` instance.
 
@@ -54,12 +57,15 @@ private extension NSTimer {
    - handler: A closure to execute at each `repeatInterval`.
    - Returns: The newly-created `NSTimer` instance.
    */
-  private class func schedule(repeatInterval interval: NSTimeInterval, handler: NSTimer! -> Void)
-    -> NSTimer {
+  class func schedule(repeatInterval interval: TimeInterval, handler: @escaping () -> Void)
+    -> Timer {
       let fireDate = interval + CFAbsoluteTimeGetCurrent()
-      let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0,
-                                                  handler)
-      CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, kCFRunLoopCommonModes)
-      return timer
+      let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0) {
+        theTimer in
+        handler()
+      }
+      
+      CFRunLoopAddTimer(CFRunLoopGetCurrent(), timer, CFRunLoopMode.commonModes)
+      return timer!
   }
 }
