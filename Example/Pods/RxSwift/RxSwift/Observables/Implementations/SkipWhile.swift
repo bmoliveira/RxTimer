@@ -1,22 +1,22 @@
 //
 //  SkipWhile.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Yury Korolev on 10/9/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-class SkipWhileSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where O.E == ElementType {
+class SkipWhileSink<O: ObserverType> : Sink<O>, ObserverType {
 
-    typealias Parent = SkipWhile<ElementType>
-    typealias Element = ElementType
+    typealias Element = O.E
+    typealias Parent = SkipWhile<Element>
 
     fileprivate let _parent: Parent
     fileprivate var _running = false
 
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
 
     func on(_ event: Event<Element>) {
@@ -42,18 +42,18 @@ class SkipWhileSink<ElementType, O: ObserverType> : Sink<O>, ObserverType where 
     }
 }
 
-class SkipWhileSinkWithIndex<ElementType, O: ObserverType> : Sink<O>, ObserverType where O.E == ElementType {
+class SkipWhileSinkWithIndex<O: ObserverType> : Sink<O>, ObserverType {
 
-    typealias Parent = SkipWhile<ElementType>
-    typealias Element = ElementType
+    typealias Element = O.E
+    typealias Parent = SkipWhile<Element>
 
     fileprivate let _parent: Parent
     fileprivate var _index = 0
     fileprivate var _running = false
 
-    init(parent: Parent, observer: O) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         _parent = parent
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
 
     func on(_ event: Event<Element>) {
@@ -88,28 +88,28 @@ class SkipWhile<Element>: Producer<Element> {
     fileprivate let _predicate: Predicate!
     fileprivate let _predicateWithIndex: PredicateWithIndex!
 
-    init(source: Observable<Element>, predicate: Predicate) {
+    init(source: Observable<Element>, predicate: @escaping Predicate) {
         _source = source
         _predicate = predicate
         _predicateWithIndex = nil
     }
 
-    init(source: Observable<Element>, predicate: PredicateWithIndex) {
+    init(source: Observable<Element>, predicate: @escaping PredicateWithIndex) {
         _source = source
         _predicate = nil
         _predicateWithIndex = predicate
     }
 
-    override func run<O : ObserverType>(_ observer: O) -> Disposable where O.E == Element {
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
         if let _ = _predicate {
-            let sink = SkipWhileSink(parent: self, observer: observer)
-            sink.disposable = _source.subscribe(sink)
-            return sink
+            let sink = SkipWhileSink(parent: self, observer: observer, cancel: cancel)
+            let subscription = _source.subscribe(sink)
+            return (sink: sink, subscription: subscription)
         }
         else {
-            let sink = SkipWhileSinkWithIndex(parent: self, observer: observer)
-            sink.disposable = _source.subscribe(sink)
-            return sink
+            let sink = SkipWhileSinkWithIndex(parent: self, observer: observer, cancel: cancel)
+            let subscription = _source.subscribe(sink)
+            return (sink: sink, subscription: subscription)
         }
     }
 }

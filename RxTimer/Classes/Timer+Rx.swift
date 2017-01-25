@@ -20,7 +20,7 @@ public extension Timer {
       let timer = Timer.schedule(repeatInterval: time) { timer in
         observer.onNext()
       }
-      return AnonymousDisposable {
+      return Disposables.create {
         observer.onCompleted()
         timer.invalidate()
       }

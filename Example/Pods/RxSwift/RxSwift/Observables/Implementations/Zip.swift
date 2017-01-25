@@ -25,11 +25,11 @@ class ZipSink<O: ObserverType> : Sink<O>, ZipSinkProtocol {
     // state
     private var _isDone: [Bool]
     
-    init(arity: Int, observer: O) {
+    init(arity: Int, observer: O, cancel: Cancelable) {
         _isDone = [Bool](repeating: false, count: arity)
         _arity = arity
         
-        super.init(observer: observer)
+        super.init(observer: observer, cancel: cancel)
     }
 
     func getResult() throws -> Element {
@@ -118,7 +118,7 @@ class ZipObserver<ElementType>
     private let _this: Disposable
     private let _setNextValue: ValueSetter
     
-    init(lock: NSRecursiveLock, parent: ZipSinkProtocol, index: Int, setNextValue: ValueSetter, this: Disposable) {
+    init(lock: NSRecursiveLock, parent: ZipSinkProtocol, index: Int, setNextValue: @escaping ValueSetter, this: Disposable) {
         _lock = lock
         _parent = parent
         _index = index

@@ -1,7 +1,7 @@
 PODS:
-  - RxSwift (3.0.0.alpha.1)
-  - RxTimer (1.1):
-    - RxSwift (~> 3.0.0.alpha.1)
+  - RxSwift (3.1.0)
+  - RxTimer (1.2):
+    - RxSwift (~> 3.1.0)
 
 DEPENDENCIES:
   - RxTimer (from `../`)
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxSwift: 0bccfee1e979c1b72a5d1dffdf96119303b5d111
-  RxTimer: ac9da72b1d4b26ad9292c225973a9bd69603c871
+  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
+  RxTimer: d17d58fc2246fb31fd3d6a9d487fa71467688b09
 
 PODFILE CHECKSUM: 5f80bc3443e7bd46dc1bca3968f2d43d3d019139
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0.rc.1
