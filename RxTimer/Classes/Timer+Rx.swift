@@ -16,9 +16,9 @@ public extension Timer {
 
   class func rx_timer(_ time: TimeInterval) -> Observable<Void> {
     return Observable<Void>.create { observer in
-      observer.onNext()
-      let timer = Timer.schedule(repeatInterval: time) { timer in
-        observer.onNext()
+      observer.onNext(())
+      let timer = Timer.schedule(repeatInterval: time) {
+        observer.onNext(())
       }
       return Disposables.create {
         observer.onCompleted()
