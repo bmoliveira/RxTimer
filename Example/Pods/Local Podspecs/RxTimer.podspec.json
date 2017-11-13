@@ -1,6 +1,6 @@
 {
   "name": "RxTimer",
-  "version": "1.2",
+  "version": "1.2.1",
   "summary": "RxTimer adds RxSwift NSTimer bindings.",
   "description": "RxTimer adds RxSwift NSTimer bindings. This allows you to trigger events reactively with a timer.",
   "homepage": "https://github.com/ivanbruel/RxTimer",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ivanbruel/RxTimer.git",
-    "tag": "1.2"
+    "tag": "1.2.1"
   },
   "social_media_url": "https://twitter.com/ivanbruel",
   "platforms": {
@@ -22,7 +22,7 @@
   "source_files": "RxTimer/Classes/**/*",
   "dependencies": {
     "RxSwift": [
-      "~> 3.1.0"
+      "~> 4.0"
     ]
   }
 }

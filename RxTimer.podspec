@@ -32,5 +32,5 @@ RxTimer adds RxSwift NSTimer bindings. This allows you to trigger events reactiv
 
   s.source_files = 'RxTimer/Classes/**/*'
 
-  s.dependency 'RxSwift', '~> 3.1'
+  s.dependency 'RxSwift', '~> 4.0'
 end
