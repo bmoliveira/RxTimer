@@ -16,7 +16,7 @@ NSTimer.rx_timer
 
 ## Any number of seconds
 ```swift
-NSTimer.rx_timer(10)
+NSTimer.rx.timer(10)
   .subscribeNext { _ in
     print("timer triggered")
   }
@@ -26,7 +26,7 @@ NSTimer.rx_timer(10)
 ### Skip first event to ignore trigger upon subscribing
 
 ```swift
-NSTimer.rx_timer(10)
+NSTimer.rx.timer(10)
   .skip(1)
   .subscribeNext { _ in
     print("timer triggered")
@@ -37,7 +37,7 @@ NSTimer.rx_timer(10)
 ### Take(n) to cancel the timer after n number of calls
 
 ```swift
-NSTimer.rx_timer(10)
+NSTimer.rx.timer(10)
   .take(10)
   .subscribeNext { _ in
     print("timer triggered")
@@ -55,6 +55,12 @@ Installing
 pod 'RxTimer'
 ```
 
+### Carthage
+
+Cartfile
+```
+github "bmoliveira/RxTimer" ~> 1.3
+```
 And that'll be 👌
 
 License
