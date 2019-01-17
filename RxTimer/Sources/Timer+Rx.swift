@@ -8,16 +8,16 @@
 import Foundation
 import RxSwift
 
-public extension Timer {
+public extension Reactive where Base: Timer {
 
-  class var rx_timer: Observable<Void> {
-    return rx_timer(1.0)
+  static var timer: Observable<Void> {
+    return timer(1.0)
   }
 
-  class func rx_timer(_ time: TimeInterval) -> Observable<Void> {
+  static func timer(_ time: TimeInterval) -> Observable<Void> {
     return Observable<Void>.create { observer in
       observer.onNext(())
-      let timer = Timer.schedule(repeatInterval: time) {
+      let timer = Timer.rx.schedule(repeatInterval: time) {
         observer.onNext(())
       }
       return Disposables.create {
@@ -28,7 +28,7 @@ public extension Timer {
   }
 }
 
-private extension Timer {
+private extension Reactive where Base: Timer {
   /*
    Creates and schedules a one-time `NSTimer` instance.
 
@@ -37,7 +37,7 @@ private extension Timer {
    - handler: A closure to execute after `delay`.
    - Returns: The newly-created `NSTimer` instance.
    */
-  class func schedule(delay: TimeInterval, handler: @escaping ()->()) -> Timer {
+  static func schedule(delay: TimeInterval, handler: @escaping ()->()) -> Timer {
     let fireDate = delay + CFAbsoluteTimeGetCurrent()
     let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, 0, 0, 0) { theTimer in
       handler()
@@ -57,7 +57,7 @@ private extension Timer {
    - handler: A closure to execute at each `repeatInterval`.
    - Returns: The newly-created `NSTimer` instance.
    */
-  class func schedule(repeatInterval interval: TimeInterval, handler: @escaping () -> Void)
+  static func schedule(repeatInterval interval: TimeInterval, handler: @escaping () -> Void)
     -> Timer {
       let fireDate = interval + CFAbsoluteTimeGetCurrent()
       let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, fireDate, interval, 0, 0) {

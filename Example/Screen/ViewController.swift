@@ -24,8 +24,7 @@ class ViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    Timer
-      .rx_timer
+    Timer.rx.timer
       .map { _ in
         self.viewModel.tick()
       }
