@@ -64,6 +64,7 @@
 		B607DB8521F0D8E4009C1A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B607DB8F21F0D9E3009C1A93 /* Timer+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Rx.swift"; sourceTree = "<group>"; };
 		B6B914C621F0E3100080B851 /* ScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewModel.swift; sourceTree = "<group>"; };
+		B6B914C821F0E9DB0080B851 /* RxTimer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RxTimer.podspec; sourceTree = "<group>"; };
 		B6E320E621F0DD0700FB090B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B6E320E721F0DD0700FB090B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -189,6 +190,7 @@
 		B6B914C421F0E0CA0080B851 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				B6B914C821F0E9DB0080B851 /* RxTimer.podspec */,
 				B6E320E621F0DD0700FB090B /* LICENSE */,
 				B6E320E721F0DD0700FB090B /* README.md */,
 			);
