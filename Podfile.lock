@@ -6,6 +6,7 @@ PODS:
     - RxSwift (~> 4.x)
 
 DEPENDENCIES:
+  - RxSwift (~> 4.x)
   - RxTimer (from `.`)
 
 SPEC REPOS:
@@ -22,6 +23,6 @@ SPEC CHECKSUMS:
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   RxTimer: ff8fc81ee78db9db3d64b261a11f1b1080810c8f
 
-PODFILE CHECKSUM: 4364b32d1e434daa5ed3dbbf395e8b20fcb311aa
+PODFILE CHECKSUM: 904255a2f72af45ac2351fb2f95b602b83125bc3
 
 COCOAPODS: 1.6.0.beta.2

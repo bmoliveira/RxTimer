@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import RxTimer
+import RxSwift
+import Foundation
 
 class ViewController: UIViewController {
   @IBOutlet weak var exampleLabel: UILabel!
+  
+  private let viewModel = ScreenViewModel(time: 30)
+  
+  let disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,6 +24,19 @@ class ViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    Timer
+      .rx_timer
+      .map { _ in
+        self.viewModel.tick()
+      }
+      .subscribe(onNext: { time in
+        self.exampleLabel.text = time.description
+      })
+      .disposed(by: disposeBag)
+  }
+  
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
     
   }
 }

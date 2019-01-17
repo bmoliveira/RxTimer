@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1D3B1DA719151334EB5CD29 /* Pods_RxTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F031826E142FA26E41F33DE /* Pods_RxTimer.framework */; };
+		4B39C5B6521D74D9B73C587F /* Pods_RxTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE2E56066EC75C735C17F37 /* Pods_RxTimer.framework */; };
+		962623DCA125AC7CFD8C4D25 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5868C397564BD36FC34A6C6F /* Pods_Example.framework */; };
 		B607DB6921F0D5F3009C1A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607DB6821F0D5F3009C1A93 /* AppDelegate.swift */; };
 		B607DB6B21F0D5F3009C1A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607DB6A21F0D5F3009C1A93 /* ViewController.swift */; };
 		B607DB6E21F0D5F3009C1A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607DB6C21F0D5F3009C1A93 /* Main.storyboard */; };
@@ -15,8 +16,9 @@
 		B607DB7321F0D5F4009C1A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607DB7121F0D5F4009C1A93 /* LaunchScreen.storyboard */; };
 		B607DB8621F0D8E4009C1A93 /* RxTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B607DB8421F0D8E4009C1A93 /* RxTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B607DB8921F0D8E4009C1A93 /* RxTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B607DB8221F0D8E4009C1A93 /* RxTimer.framework */; };
-		B607DB8A21F0D8E4009C1A93 /* RxTimer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B607DB8221F0D8E4009C1A93 /* RxTimer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B607DB9021F0D9E4009C1A93 /* Timer+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607DB8F21F0D9E3009C1A93 /* Timer+Rx.swift */; };
+		B6B914C521F0E17A0080B851 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6B914C721F0E3100080B851 /* ScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B914C621F0E3100080B851 /* ScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B607DB8A21F0D8E4009C1A93 /* RxTimer.framework in Embed Frameworks */,
+				B6B914C521F0E17A0080B851 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,9 +46,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3A3B4BC9F86B05286A514D38 /* Pods-RxTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTimer.debug.xcconfig"; path = "Target Support Files/Pods-RxTimer/Pods-RxTimer.debug.xcconfig"; sourceTree = "<group>"; };
-		3C131280AF0C43416D72B11E /* Pods-RxTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTimer.release.xcconfig"; path = "Target Support Files/Pods-RxTimer/Pods-RxTimer.release.xcconfig"; sourceTree = "<group>"; };
-		4F031826E142FA26E41F33DE /* Pods_RxTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE2E56066EC75C735C17F37 /* Pods_RxTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD1B7B49B5C6A010AD5151F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		47C699604F2F1CC8C1691A3B /* Pods-RxTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTimer.debug.xcconfig"; path = "Target Support Files/Pods-RxTimer/Pods-RxTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		4F719C032191451F46529542 /* Pods-RxTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTimer.release.xcconfig"; path = "Target Support Files/Pods-RxTimer/Pods-RxTimer.release.xcconfig"; sourceTree = "<group>"; };
+		5868C397564BD36FC34A6C6F /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		819495C523CAFAC9187C4BC0 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		B607DB6521F0D5F3009C1A93 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B607DB6821F0D5F3009C1A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B607DB6A21F0D5F3009C1A93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		B607DB8421F0D8E4009C1A93 /* RxTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxTimer.h; sourceTree = "<group>"; };
 		B607DB8521F0D8E4009C1A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B607DB8F21F0D9E3009C1A93 /* Timer+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Rx.swift"; sourceTree = "<group>"; };
+		B6B914C621F0E3100080B851 /* ScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewModel.swift; sourceTree = "<group>"; };
 		B6E320E621F0DD0700FB090B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		B6E320E721F0DD0700FB090B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -68,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B607DB8921F0D8E4009C1A93 /* RxTimer.framework in Frameworks */,
+				962623DCA125AC7CFD8C4D25 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D3B1DA719151334EB5CD29 /* Pods_RxTimer.framework in Frameworks */,
+				4B39C5B6521D74D9B73C587F /* Pods_RxTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +92,21 @@
 		1375E646F4A286BDE1C7611A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3A3B4BC9F86B05286A514D38 /* Pods-RxTimer.debug.xcconfig */,
-				3C131280AF0C43416D72B11E /* Pods-RxTimer.release.xcconfig */,
+				47C699604F2F1CC8C1691A3B /* Pods-RxTimer.debug.xcconfig */,
+				4F719C032191451F46529542 /* Pods-RxTimer.release.xcconfig */,
+				1BD1B7B49B5C6A010AD5151F /* Pods-Example.debug.xcconfig */,
+				819495C523CAFAC9187C4BC0 /* Pods-Example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A9D42BA62F18CC7D8DE9811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE2E56066EC75C735C17F37 /* Pods_RxTimer.framework */,
+				5868C397564BD36FC34A6C6F /* Pods_Example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B607DB5C21F0D5F3009C1A93 = {
@@ -96,10 +114,10 @@
 			children = (
 				B607DB6721F0D5F3009C1A93 /* Example */,
 				B607DB8321F0D8E4009C1A93 /* RxTimer */,
-				B6E320E521F0DCEC00FB090B /* Metadata */,
-				FBB11D46E3A28FFFE4EA2016 /* Frameworks */,
+				B6B914C421F0E0CA0080B851 /* Metadata */,
 				1375E646F4A286BDE1C7611A /* Pods */,
 				B607DB6621F0D5F3009C1A93 /* Products */,
+				3A9D42BA62F18CC7D8DE9811 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B607DB6A21F0D5F3009C1A93 /* ViewController.swift */,
+				B6B914C621F0E3100080B851 /* ScreenViewModel.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -167,21 +186,13 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		B6E320E521F0DCEC00FB090B /* Metadata */ = {
+		B6B914C421F0E0CA0080B851 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
 				B6E320E621F0DD0700FB090B /* LICENSE */,
 				B6E320E721F0DD0700FB090B /* README.md */,
 			);
-			path = Metadata;
-			sourceTree = "<group>";
-		};
-		FBB11D46E3A28FFFE4EA2016 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F031826E142FA26E41F33DE /* Pods_RxTimer.framework */,
-			);
-			name = Frameworks;
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B607DB7721F0D5F4009C1A93 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				7A85C15A659C2AEB045B6154 /* [CP] Check Pods Manifest.lock */,
 				B607DB6121F0D5F3009C1A93 /* Sources */,
 				B607DB6221F0D5F3009C1A93 /* Frameworks */,
 				B607DB6321F0D5F3009C1A93 /* Resources */,
 				B607DB8E21F0D8E4009C1A93 /* Embed Frameworks */,
+				EDD363DB87DD6FCB7CB525D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,7 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B607DB8B21F0D8E4009C1A93 /* Build configuration list for PBXNativeTarget "RxTimer" */;
 			buildPhases = (
-				8614A180FAD4207893325E38 /* [CP] Check Pods Manifest.lock */,
+				6C7C2CF885BFC99ABDE928CC /* [CP] Check Pods Manifest.lock */,
 				B607DB7D21F0D8E4009C1A93 /* Headers */,
 				B607DB7E21F0D8E4009C1A93 /* Sources */,
 				B607DB7F21F0D8E4009C1A93 /* Frameworks */,
@@ -295,7 +308,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8614A180FAD4207893325E38 /* [CP] Check Pods Manifest.lock */ = {
+		6C7C2CF885BFC99ABDE928CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,6 +330,54 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A85C15A659C2AEB045B6154 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDD363DB87DD6FCB7CB525D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTimer/RxTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B607DB6B21F0D5F3009C1A93 /* ViewController.swift in Sources */,
+				B6B914C721F0E3100080B851 /* ScreenViewModel.swift in Sources */,
 				B607DB6921F0D5F3009C1A93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +547,7 @@
 		};
 		B607DB7821F0D5F4009C1A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD1B7B49B5C6A010AD5151F /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -503,6 +566,7 @@
 		};
 		B607DB7921F0D5F4009C1A93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819495C523CAFAC9187C4BC0 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -521,7 +585,7 @@
 		};
 		B607DB8C21F0D8E4009C1A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A3B4BC9F86B05286A514D38 /* Pods-RxTimer.debug.xcconfig */;
+			baseConfigurationReference = 47C699604F2F1CC8C1691A3B /* Pods-RxTimer.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -551,7 +615,7 @@
 		};
 		B607DB8D21F0D8E4009C1A93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C131280AF0C43416D72B11E /* Pods-RxTimer.release.xcconfig */;
+			baseConfigurationReference = 4F719C032191451F46529542 /* Pods-RxTimer.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
