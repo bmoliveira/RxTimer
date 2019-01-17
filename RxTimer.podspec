@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxTimer'
-  s.version          = '1.2.2'
+  s.version          = '1.3'
   s.summary          = 'RxTimer adds RxSwift NSTimer bindings.'
 
 # This description is used to generate tags and improve search results.
@@ -19,18 +19,17 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 RxTimer adds RxSwift NSTimer bindings. This allows you to trigger events reactively with a timer.
-                       DESC
+                      DESC
 
-  s.homepage         = 'https://github.com/ivanbruel/RxTimer'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/bmoliveira/RxTimer'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ivan Bruel' => 'ivan.bruel@gmail.com' }
-  s.source           = { :git => 'https://github.com/ivanbruel/RxTimer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/bmoliveira/RxTimer.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ivanbruel'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RxTimer/Classes/**/*'
+  s.source_files = 'RxTimer/Sources/**/*'
 
-  s.dependency 'RxSwift', '~> 4.0'
+  s.dependency 'RxSwift', '~> 4.x'
 end
